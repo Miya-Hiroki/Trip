@@ -1,0 +1,219 @@
+@charset "utf-8";
+*{
+	margin: 0px;
+	padding: 0px;
+}
+html,body{
+	text-align: center;
+}
+body{
+	font-family: "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	background-color: #f0f0f0;
+	font-size: 12px;
+}
+a{
+	text-decoration: none;
+	color: #008000;
+}
+#wrapper{
+	text-align: left;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFFFFF;
+	padding: 20px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+}
+
+/* タイトル */
+/* ロゴ */
+#hLogo{
+	margin-bottom: 5px;
+	font-size: 20px;
+	font-weight: bold;
+}
+/* ナビ*/
+#hNavi{
+	overflow: hidden;
+	background-color: #008000;
+	margin-bottom: 20px;
+}
+#hNavi ul{
+	display: flex;
+	padding-right: 0px;
+	padding-left:  0px;
+}
+#hNavi li{
+	display:block;
+	list-style-type: none;
+	border-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFFFFF;
+}
+#hNavi li a{
+	display: block;
+	text-align: center;
+	width: 100px;
+	color: #FFFFFF;
+	height: 20px;
+	padding: 8px;
+}
+/*新規登録*/
+#container h1{
+	font-size: 16px;
+	color: #333333;
+	padding: 8px;
+	background-image: url(../bg_title.jpg);
+	background-repeat: repeat-x;
+	border: 1px solid #CCCCCC;
+	overflow: hidden;
+}
+
+#container h1 .title{
+	float: left;
+}
+#container h1 .addlogo{
+	float: right;
+	display: block;
+	padding: 4px 8px;
+}
+#container h1 .add{
+	float: right;
+	display: block;
+	background-color: #008000;
+	padding: 4px 8px;
+	font-size: 12px;
+	font-weight:normal;
+	color: #FFFFFF;
+}
+/*検索ボックス*/
+#Search{
+max-width:270px;
+}
+#sbox{
+outline:0;/*クリック時の青い枠線消す*/	
+height:20px;	
+padding:0 10px;
+border-radius:2px 0 0 2px;	
+background:#eee;		
+}
+#sbtn{
+width:70px;
+height:25px;
+border-radius:0 2px 2px 0;
+background:#008000;
+border:none;
+color:#fff;
+font-weight:bold;
+font-size:10px;
+margin-bottom:20px;
+}
+#sbtn:hover{
+color:#666;
+}
+
+/*テーブル表*/
+#container h2{
+	font-size: 14px;
+	margin-bottom: 20px;
+	padding-left: 5px;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #006699;
+}
+
+#contentList table{
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+#contentList th{
+	padding: 5px;
+	border: 1px solid #CCCCCC;
+	font-size: 12px;
+	background-color: #eeeeee;
+	text-align: center;
+}
+
+#contentList td{
+	padding: 5px;
+	border: 1px solid #CCCCCC;
+	line-height: 150%;
+}
+
+#contentList .hover {
+	background-color: #ffffe0;
+}
+
+#contentList .listButton {
+	text-align: center;
+}
+
+#contentList .listButton input {
+	width: 150px;
+}
+
+.pageInfo{
+	margin-bottom: 20px;
+}
+
+.pageNavi {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.pageNavi strong,
+.pageNavi a {
+	margin-right: 5px;
+}
+
+#contentDetail{
+	margin-bottom: 20px;
+}
+
+#contentDetail table{
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+
+#contentDetail th{
+	padding: 5px;
+	border: 1px solid #CCCCCC;
+	font-size: 12px;
+	background-color: #eeeeee;
+	text-align: left;
+	font-weight: normal;
+	width: 100px;
+}
+
+#contentDetail td{
+	padding: 5px;
+	border: 1px solid #CCCCCC;
+	line-height: 150%;
+}
+
+.btnDetails{
+	text-align: center;
+}
+.btnDetails input{
+	width: 120px;
+}
+.btnDetails .edit{
+	margin-right: 10px;
+}
+.btn-flat-logo {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #00bcd4;
+  transition: .4s;
+}
