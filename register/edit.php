@@ -40,6 +40,7 @@ function getPathFile($season)
   $id=$_REQUEST['id']; // $_GETでも$_POSTでも使用する
   $page=$_REQUEST['page'];
   $link = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+  mysqli_set_charset($link, 'utf8');
   if ($link) {
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         //新しく更新する処理（POSTで入ってくる時の処理）

@@ -2,6 +2,7 @@
   include("db_config.php");
   $post=$_GET['post'];
   $link = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+  mysqli_set_charset($link, 'utf8');
   if ($link) {
         $query = "SELECT pref,city,address from KEN_ALL where postal7 = '".$post."';";
         if ($result = mysqli_query($link, $query)) {

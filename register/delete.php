@@ -4,6 +4,7 @@
     if(@$_POST['delete_season']){
     $ids=$_POST['del_season_id'];
     $link = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+    mysqli_set_charset($link, 'utf8');
     foreach ($ids as $id) {
         $sql="SELECT * FROM trip_season WHERE id = $id";
         if($result=mysqli_query($link,$sql)){
@@ -27,6 +28,7 @@
     //ランキング登録リストの削除
     $ids=$_POST['del_ranking_id'];
     $link = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+    mysqli_set_charset($link, 'utf8');
     foreach ($ids as $id) {
         $sql="SELECT * FROM trip_ranking WHERE id = $id";
         if($result=mysqli_query($link,$sql)){

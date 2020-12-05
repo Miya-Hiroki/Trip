@@ -47,6 +47,7 @@
           //登録したアドレス帳テーブルの表示
           include("db_config.php");
           $link = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+          mysqli_set_charset($link, 'utf8');
           if($result=mysqli_query($link,$sql)){  //mysqli_query()は、データ抽出が成功するとTRUEを返します。
             foreach ($result as $row) {
               echo "<tr>\n";

@@ -68,6 +68,7 @@ if(!isset($_SESSION['name'])){
       //Databaseに格納
       include("db_config.php");
       $link = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+      mysqli_set_charset($link, 'utf8');
       if ($link) {
         //季節登録リスト設定
         $max_season_sequence="SELECT max(season_sequence) FROM trip_season;";

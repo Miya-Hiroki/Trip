@@ -141,6 +141,7 @@ $dl = <<<EOF
 EOF;
 					include("register/db_config.php");
 					$link = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+					mysqli_set_charset($link, 'utf8');
 					$seazon = "春";
 					if ($link) {
 						$sql = "select subject,filecontents from trip_season where season = '".$seazon."' order by season_sequence";
@@ -230,6 +231,7 @@ $dl = <<<EOF
 EOF;
 					include("register/db_config.php");
 					$link = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+					mysqli_set_charset($link, 'utf8');
 					if ($link) {
 						$sql = "select subject,filecontents from trip_ranking order by ranking";
 					    if($result = mysqli_query($link,$sql)){
