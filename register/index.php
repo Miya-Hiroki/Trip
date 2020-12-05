@@ -169,7 +169,7 @@ if(!isset($_SESSION['name'])){
           if(strlen($keyword) > 0) {
             $sql="SELECT * FROM trip_ranking WHERE season like '%".$keyword."%' OR category like '%".$keyword."%' OR subject like '%".$keyword."%' OR pref like '%".$keyword."%';";
           }else {
-            $sql="SELECT * FROM trip_ranking";
+            $sql="SELECT * FROM trip_ranking order by ranking";
           }
           if($result=mysqli_query($link,$sql)){  //mysqli_query()は、データ抽出が成功するとTRUEを返します。
             foreach ($result as $row) {

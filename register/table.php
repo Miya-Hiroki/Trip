@@ -74,10 +74,6 @@
               <label for="FormNameMeiKana">メイ：</label><input type="text" name="name_mei_kana" id="FormNameMeiKana" value="<?=$name_mei_kana?>">
             </td>
           </tr>
-          <?php
-          if ($page == "1") {
-            // 季節
-          ?>
           <tr>
             <th><label for="Season">季節</label><span class="required">（必須）</span></th>
             <td>
@@ -87,9 +83,6 @@
               <label for="FormSeason4"><input type="radio" name="season" id="winter" value="冬" <?php if ($season=="冬") {echo "checked";} ?>>冬</label>
             </td>
           </tr>
-          <?php
-          }
-          ?>
           <tr>
             <th><label for="RegisterDay">登録年月日</label></th>
             <td>
@@ -194,7 +187,7 @@
           if ($page == "1") {
             // 季節
           ?>
-          <th><label for="FormMemo">季節表示順</label></th>
+          <th><label for="FormMemo">季節表示番号</label></th>
           <td>
               <input type="text" name="sequence" id="sequence" value="<?=$sequence?>" class="inputText400">
           </td>
@@ -202,7 +195,7 @@
           } else {
             // ランキング
           ?>
-          <th><label for="FormMemo">ランキング</label></th>
+          <th><label for="FormMemo">ランキング番号</label></th>
           <td>
               <input type="text" name="sequence" id="sequence" value="<?=$sequence?>" class="inputText400">
           </td>

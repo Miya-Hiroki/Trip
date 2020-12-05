@@ -1,0 +1,230 @@
+/* CSS Document */
+
+a{
+	outline: none;
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	}
+
+button{
+	outline:none;
+	}
+	button::-moz-focus-inner{
+		border: none;
+		}
+
+.center{
+	text-align: center
+	}
+
+.left{
+	text-align: left
+	}
+
+.right{
+	text-align: right;
+	}
+
+.none{
+	display: none;
+	}
+
+.disabled{
+	opacity: 0.3;
+	pointer-events: none;
+	}
+
+.thumb{
+	display: none;
+	}
+	.thumb:not(img){
+		position: relative;
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 100% 0 0 0;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		object-fit: cover;
+		object-position: center;
+		overflow: hidden;
+		}
+	.thumb img{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: inherit;
+		object-position: inherit;
+		}
+	.thumb.contain{
+		background-size: contain;
+		object-fit: contain;
+		}
+	.thumb.cover{
+		background-size: cover;
+		object-fit: cover;
+		}
+	.thumb.top{
+		background-position:  top;
+		object-position: center top;
+		}
+	.thumb.bottom{
+		background-position: bottom;
+		object-position: center bottom;
+		}
+	.thumb.left{
+		background-position: left;
+		object-position: left center;
+		}
+	.thumb.right{
+		background-position: right;
+		object-position: right center;
+		}
+
+.fr-view{
+	/*word-break: break-all;*/
+	}
+
+
+
+/* for all */
+@media (max-width: 1199px) {
+/*1199px以下*/
+}
+@media (max-width: 991px) {
+/*991px以下*/
+}
+
+/* for mobile */
+@media (max-width: 767px) {
+/*767px以下*/
+[href^="tel"]{
+	text-decoration: underline;
+	}
+.tb:not(.sp):not(.sp_p):not(.sp_l),
+.pc:not(.sp):not(.sp_p):not(.sp_l){
+	display: none;
+	}
+}
+@media (max-width: 767px) and (orientation:portrait) {
+/*767px以下 縦向き*/
+.sp_l,
+.tb:not(.sp):not(.sp_p),
+.pc:not(.sp):not(.sp_p){
+	display: none;
+	}
+}
+@media (max-width: 767px) and (orientation:landscape) {
+/*767px以下 横向き*/
+.sp_p,
+.tb:not(.sp):not(.sp_l),
+.pc:not(.sp):not(.sp_l){
+	display: none;
+	}
+}
+
+
+/* for tablet */
+@media (min-width: 768px) {
+/*768px以上*/
+[href^="tel"]{
+	pointer-events: none;
+	color: inherit;
+	text-decoration: none;
+	}
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+/*768px～1199px*/
+}
+@media (min-width: 768px) and (max-width: 991px) {
+/*768px～991px*/
+.sp:not(.tb),
+.sp_p:not(.tb),
+.sp_l:not(.tb),
+.pc:not(.tb){
+	display: none;
+	}
+}
+
+
+/* for PC */
+@media (min-width: 992px) {
+/*992px以上*/
+.sp:not(.pc),
+.sp_p:not(.pc),
+.sp_l:not(.pc),
+.tb:not(.pc){
+	display: none;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+/*992px～1199px*/
+}
+@media (min-width: 1200px) {
+/*1200px以上*/
+}
+
+
+/* Edge */
+@supports (-ms-ime-align:auto) {
+}
+
+
+/* ie */
+@media all and (-ms-high-contrast: none) {
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+/*	list-style: none;*/
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+

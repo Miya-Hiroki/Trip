@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>中国地方観光情報ナビ</title>
+<title>自由旅〜中国地方編〜</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="css/base.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="FlexSlider/flexslider.css" type="text/css" />
@@ -88,11 +88,11 @@
 	<div id="globalMenu">
 		<div class="wrap">
 			<ul>
-				<li><a href="/areaguide/index.html">エリアガイド<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
-				<li><a href="/attractions/index.html">観光・体験<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
-				<li><a href="/dining/index.html">グルメ<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
-				<li><a href="/booking/index.html">旅の予約<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
-				<li><a href="/transport/index.html">アクセス<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
+				<li><a href="site/areaguide/index.html">エリアガイド<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
+				<li><a href="site/attractions/index.html">観光・体験<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
+				<li><a href="site/dining/index.php">グルメ<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
+				<li><a href="site/booking/index.html">旅の予約<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
+				<li><a href="site/transport/index.html">アクセス<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
 			</ul>
 		</div>
 	</div>
@@ -230,7 +230,6 @@ $dl = <<<EOF
 EOF;
 					include("register/db_config.php");
 					$link = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-					$seazon = "春";
 					if ($link) {
 						$sql = "select subject,filecontents from trip_ranking order by ranking";
 					    if($result = mysqli_query($link,$sql)){
@@ -263,7 +262,7 @@ EOF;
 		 <li>
 		  <h3 class="footerTitle">－ お問い合わせ －</h3>
 		   <div class="social-media">
-             <span class="mr_social_sharing"><a href="https://www.facebook.com/tabijikan.jp" target="_blank" rel="noopener noreferrer"><img src="https://i0.wp.com/tabijikan.jp/wp-content/uploads/2018/02/ico_facebook.png?w=702&amp;ssl=1" class="nopin no-display appear" alt="Friend me on Facebook" title="Friend me on Facebook" data-recalc-dims="1"></a></span><span class="mr_social_sharing"><a href="https://twitter.com/tabijikan_jp" target="_blank" rel="noopener noreferrer"><img src="https://i1.wp.com/tabijikan.jp/wp-content/uploads/2018/02/ico_twitter.png?w=702&amp;ssl=1" class="nopin no-display appear" alt="Follow me on Twitter" title="Follow me on Twitter" data-recalc-dims="1"></a></span><span class="mr_social_sharing"><a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Ftabijikan.jp%2Ffeed%2F" target="_blank" rel="noopener noreferrer"><img src="https://i2.wp.com/tabijikan.jp/wp-content/uploads/2018/02/ico_feedly.png?w=702&amp;ssl=1" class="nopin no-display appear" alt="RSS Feed" title="RSS Feed" data-reclc-dims="1"></a></span>
+             </span><span class="mr_social_sharing"><a href="https://mobile.twitter.com/Dj5WBFAWYmpDDdw" target="_blank" rel="noopener noreferrer"><img src="https://i1.wp.com/tabijikan.jp/wp-content/uploads/2018/02/ico_twitter.png?w=702&amp;ssl=1" class="nopin no-display appear" alt="Follow me on Twitter" title="Follow me on Twitter" data-recalc-dims="1"></a></span>
            </div>
          </li>
 		 <li class="widget col-4 bunyad-about">	

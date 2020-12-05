@@ -1,0 +1,230 @@
+/* CSS Document */
+
+#dining{
+	padding: 0;
+	}
+	#dining header{
+		padding-top: 0;
+		}
+	#dining section{
+		padding-top: 0;
+		}
+		#dining section h3{
+			color: #1a1a1a;
+			}
+		#dining section .wrap{
+			display: flex;
+			}
+		#dining section .linkBut{
+			min-width: 16em;
+			background: #e56e80;
+			}
+		#dining section .center{
+			margin-top: 1em;
+			}
+
+#lead{
+	margin-top: 2em;
+	}
+
+#subject{}
+	#subject .tabMenu{}
+		#subject .tabMenu li{
+			position: relative;
+			}
+			#subject .tabMenu li:hover ul{
+				display: flex !important;
+				height: auto;
+				opacity: 1;
+				}
+			#subject .tabMenu li ul{
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: none;
+				align-items: center;
+				height: 0;
+				padding-top: 4.5em;
+				flex-direction: column;
+				filter: drop-shadow(0 0 0.2em rgba(0,0,0,0.5));
+				opacity: 0;
+				transition: opacity 0.2s ease-out;
+				z-index: 10;
+				}
+				#subject .tabMenu li ul:before{
+					content: "";
+					position: absolute;
+					top: 2.5em;
+					left: calc(50% - 1em);
+					border: 1em solid transparent;
+					border-bottom-color: #fff;
+					}
+			#subject .tabMenu li li{
+				width: 100%;
+				border-radius: 0;
+				background: #fff;
+				}
+				#subject .tabMenu li li:before{
+					content: none;
+					}
+				#subject .tabMenu li li a{
+					padding: 1em;
+					color: #e56e80;
+					font-size: 1em;
+					}
+			#subject .tabMenu li li+li{
+				border-top: 1px solid #ccc;
+				}
+
+
+/* for all */
+@media (max-width: 1199px) {
+/*1199pxä»¥ä¸‹*/
+}
+@media (max-width: 991px) {
+/*991pxä»¥ä¸‹*/
+}
+
+
+/* for mobile */
+@media (max-width: 767px) {
+/*767ä»¥ä¸‹px*/
+#dining{}
+	#dining section{}
+		#dining section .wrap{
+			background: #fff;
+			border-top: 6px solid #223a70;
+			filter: drop-shadow(0.2em 0.2em 0.2em rgba(0,0,0,0.1));
+			flex-direction: column-reverse;
+			}
+			#dining section .wrap > div{
+				padding: 1em;
+				}
+		#dining section .thumb{
+			padding-top: 66.66%;
+			}
+#subject{}
+	#subject .tabMenu{}
+		#subject .tabMenu li{}
+			#subject .tabMenu li ul{
+				left: calc(50% - 4em);
+				width: 8em;
+				}
+}
+@media (max-width: 767px) and (orientation:portrait) {
+/*767pxä»¥ä¸‹ ç¸¦å‘ã*/
+}
+@media (max-width: 767px) and (orientation:landscape) {
+/*767pxä»¥ä¸‹ æ¨ªå‘ã*/
+}
+
+
+/* for tablet */
+@media (min-width: 768px) {
+/*768pxä»¥ä¸Š*/
+#dining{}
+	#dining section{}
+		#dining section:nth-of-type(odd) .wrap{
+			flex-direction: row-reverse;
+			}
+		#dining section:nth-of-type(even) .wrap{
+			flex-direction: row;
+			}
+		#dining section h3{
+			text-align: left;
+			}
+		#dining section .wrap{}
+			#dining section .wrap > figure{
+				position: relative;
+				}
+			#dining section .wrap > div{
+				position: relative;
+				border-top: 6px solid #223a70;
+				background: #fff;
+				filter: drop-shadow(0.2em 0.2em 0.2em rgba(0,0,0,0.1));
+				z-index: 1;
+				}
+		#dining section .thumb{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			padding: 0;
+			}
+#subject{}
+	#subject .tabMenu{}
+		#subject .tabMenu li{}
+			#subject .tabMenu li ul{
+				left: calc(50% - 5em);
+				width: 10em;
+				}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+/*768pxï½ž991px*/
+#dining{}
+	#dining section{}
+		#dining section:nth-of-type(odd) .wrap{}
+			#dining section:nth-of-type(odd) .wrap figure{
+				margin-right: -2em;
+				}
+		#dining section:nth-of-type(even) .wrap{}
+			#dining section:nth-of-type(even) .wrap figure{
+				margin-left: -2em;
+				}
+		#dining section .wrap{}
+			#dining section .wrap > figure{
+				width: calc(60% + 2em);
+				height: 24em;
+				}
+			#dining section .wrap > div{
+				width: 40%;
+				margin: 2em 0;
+				padding: 1em;
+				}
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+/*768pxï½ž1199px*/
+}
+
+
+/* for PC */
+@media (min-width: 992px) {
+/*992pxä»¥ä¸Š*/
+#dining{}
+	#dining section{}
+		#dining section:nth-of-type(odd) .wrap{}
+			#dining section:nth-of-type(odd) .wrap figure{
+				margin-right: -4em;
+				}
+		#dining section:nth-of-type(even) .wrap{}
+			#dining section:nth-of-type(even) .wrap figure{
+				margin-left: -4em;
+				}
+		#dining section .wrap{}
+			#dining section .wrap > figure{
+				width: calc(65% + 4em);
+				height: 26em;
+				}
+			#dining section .wrap > div{
+				width: 34%;
+				margin: 3em 0;
+				padding: 1.5em;
+				}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+/*992pxï½ž1199px*/
+}
+@media (min-width: 1200px) {
+/*1200pxä»¥ä¸Š*/
+}
+
+
+/* Edge */
+@supports (-ms-ime-align:auto) {
+}
+
+
+/* ie */
+@media all and (-ms-high-contrast: none) {
+}
