@@ -60,7 +60,7 @@ if(!isset($_SESSION['name'])){
          <?php          
           //登録したアドレス帳テーブルの表示
           include("db_config.php");
-          $link = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);.
+          $link = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
           mysqli_set_charset($link, 'utf8');
           //検索機能
           $keyword = "";
