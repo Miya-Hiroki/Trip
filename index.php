@@ -78,8 +78,8 @@
 <div id="wrapper">
 <header id="header">
 	<div class="wrap">
-		<h1 id="siteName"><a href="/index.html">
-		<a href=""><img class="logo" src="images/Logo/logo.png" alt=""></a>
+		<h1 id="siteName">
+		<a href="index.php"><img class="logo" src="images/Logo/logo.png" alt=""></a>
 		</h1>
 		<button id="navButton"><i></i><i></i><i></i><span>menu</span></button>
 	</div>
@@ -88,11 +88,11 @@
 	<div id="globalMenu">
 		<div class="wrap">
 			<ul>
-				<li><a href="site/areaguide/index.html">エリアガイド<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
-				<li><a href="site/attractions/index.html">観光・体験<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
-				<li><a href="site/dining/index.php">グルメ<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
-				<li><a href="site/booking/index.html">旅の予約<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
-				<li><a href="site/transport/index.html">アクセス<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
+				<li><a href="site/areaguide/index.html">エリアガイド</a></li>
+				<li><a href="site/attractions/index.html">観光・体験</a></li>
+				<li><a href="site/dining/index.php">グルメ</a></li>
+				<li><a href="site/booking/index.html">旅の予約</a></li>
+				<li><a href="site/transport/index.html">アクセス</a></li>
 			</ul>
 		</div>
 	</div>

@@ -154,10 +154,13 @@ body:not(.nav) #nav {
 	fill:#fff;
 	}
 	#subject .headline{
+		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+        padding-top: 1em;
+        margin-top: 3em;
 		}
 	#subject .tabMenu{
 		position: relative;
@@ -273,7 +276,6 @@ main * {
 }
 
 #main h2 {
-    color: #1a1a1a;
     fill: #1a1a1a;
     font-weight: bold;
     font-size:2.25em;
@@ -285,6 +287,100 @@ main * {
 	#main h2 {
 	    padding-top:0em;
 	}
+
+.linkBut{
+	display: inline-block;
+	max-width: 100%;
+	padding: calc(1em - 2px) calc(1.5em - 2px);
+	border: 2px solid transparent;
+	border-radius: 10em;
+	line-height: 1em;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	}
+	[class="linkBut"]{
+		background: #223a70;
+		color: #fff;
+		fill: #fff;
+		}
+		[class="linkBut"]:hover{
+			background: #e50012;
+			color: #fff;
+			fill: #fff;
+			}
+		[class="linkBut"] i{
+			position: relative;
+			padding-left: 1.5em;
+			}
+		[class="linkBut"] svg{
+			position: absolute;
+			top: calc(50% - 0.7em);
+			left: 0;
+			width: 1.4em;
+			height: 1.4em;
+			}
+	.linkBut.more{
+		position: relative;
+		padding-right: calc(3em - 2px);
+		background: #1a1a1a;
+		color: #fff;
+		fill: #fff;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		}
+		.linkBut.more:hover{
+			background: #e50012;
+			color: #fff;
+			fill: #fff;
+			}
+		.linkBut.more i{
+			position: absolute;
+			top: calc(50% - 0.5em);
+			right: 1em;
+			transform: scale(1.2);
+			}
+	.linkBut.download{
+		position: relative;
+		padding-right: calc(3em - 2px);
+		border-color: #1a1a1a;
+		color: #1a1a1a;
+		fill: #1a1a1a;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		}
+		.linkBut.download:hover{
+			border-color: #e50012;
+			color: #e50012;
+			fill: #e50012;
+			}
+		.linkBut.download i{
+			position: absolute;
+			top: calc(50% - 0.5em);
+			right: 1em;
+			transform: scale(1.4);
+			}
+
+.linkText{}
+	.linkText i{
+		position: relative;
+		padding-left: 1.2em;
+		}
+		.linkText i svg{
+			position: absolute;
+			top: calc(50% - 0.5em);
+			left: 0;
+			}
+	.linkText span{
+		margin-left: 0.2em;
+		vertical-align: middle;
+		opacity: 0.5;
+		}
+		.linkText span svg{
+			width: 0.8em;
+			}
 
 .tabMenu{}
 	ul.tabMenu,.tabMenu ul{
@@ -675,6 +771,9 @@ article footer{
 #main h2 {
     padding-top:1em;
 }
+#pagePath{
+	display: none;
+	}
 #footer ul{
 	width:100%;
     display: flex;
@@ -869,6 +968,28 @@ html{
 		border-left: 1px solid #999999;
 		}
 }
+#pagePath{
+	padding: 1em 0;
+	border-top: 1px solid #ccc;
+	}
+	#pagePath ul{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		list-style: none;
+		}
+	#pagePath li{
+		line-height: 1.2em;
+		}
+	#pagePath a{
+		color: #666;
+		text-decoration: none;
+		}
+	#pagePath i{
+		margin: 0 0.3em;
+		opacity: 0.5;
+		}
+
 @media (min-width: 768px) {
 /*768px～1199px*/
 #copyright{

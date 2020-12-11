@@ -29,8 +29,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="../../css/default.css">
 <link rel="stylesheet" href="../../css/base.css">
 <!-- InstanceBeginEditable name="head" -->
-<link rel="stylesheet" href="../../css/common.css">
-<link rel="stylesheet" href="../../css/index?20201205.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/dining.css">
 <!-- InstanceEndEditable -->
 <script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/620457931/?random=1606930134083&amp;cv=9&amp;fst=1606930134083&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=376635470&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1080&amp;u_aw=1920&amp;u_cd=24&amp;u_his=10&amp;u_tz=540&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2wgb41&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.tohokukanko.jp%2Fdining%2Findex.html&amp;ref=https%3A%2F%2Fwww.tohokukanko.jp%2Fbooking%2Findex.html&amp;tiba=%E6%9D%B1%E5%8C%97%E3%82%B0%E3%83%AB%E3%83%A1%20%7C%20%E6%97%85%E6%9D%B1%E5%8C%97%20-%20%E6%9D%B1%E5%8C%97%E3%81%AE%E8%A6%B3%E5%85%89%E3%83%BB%E6%97%85%E8%A1%8C%E6%83%85%E5%A0%B1%E3%82%B5%E3%82%A4%E3%83%88&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script></head>
 <body ontouchend="" class="done scrollTop">
@@ -65,7 +65,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<article id="dining">
 		<header>
 			<div id="subject">
-				<h2 class="headline"><i><svg><use xlink:href="https://www.tohokukanko.jp/dining/index.html#iconDining"></use></svg></i>グルメ</h2>
+				<h2 class="headline">グルメ</h2>
 				<nav class="tabMenu">
 					<div class="wrap">
 						<ul>
@@ -195,7 +195,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="pagePath">
 	<div class="wrap">
 		<ul>
-			<li><a href="/index.html">TOP</a><i><svg><use xlink:href="#iconChevronRight"></use></svg></i></li>
+			<li><a href="../../index.php">TOP</a><i><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+		    <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+			</svg></i></li>
 			<!-- InstanceBeginEditable name="pan" -->
 			<li>グルメ</li>
 			<!-- InstanceEndEditable -->
@@ -204,21 +206,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <div id="pageTop" style="display: none;"><a href="#wrapper"><i><svg><use xlink:href="#iconTotop"></use></svg></i></a></div>
 <footer id="footer">
-	<div id="fNav">
-		<div class="wrap">
-			<ul>
-				<li><a href="/business/index.html"><i><svg><use xlink:href="#iconChevronRight"></use></svg></i>事業者の皆様へ</a></li>
-				<li><a href="/manabi/index.html"><i><svg><use xlink:href="#iconChevronRight"></use></svg></i>教育旅行関係者の皆様へ</a></li>
-				<li><a href="/business/about-us/index.html"><i><svg><use xlink:href="#iconChevronRight"></use></svg></i>運営組織</a></li>
-				<li><a href="/privacy/index.html"><i><svg><use xlink:href="#iconChevronRight"></use></svg></i>サイトポリシー</a></li>
-				<li><a href="/photos/index.html"><i><svg><use xlink:href="#iconChevronRight"></use></svg></i>フォトライブラリー</a></li>
-				<li><a href="/contact-us/index.html"><i><svg><use xlink:href="#iconChevronRight"></use></svg></i>お問い合わせ</a></li>
-			</ul>
-		</div>
-	</div>
 	<div id="copyright">
 		<div class="wrap">
-			<p>Copyright All Rights Reserved.</p>
+			<p>Copyright＠2020 自由旅. All Rights Reserved.</p>
 		</div>
 	</div>
 </footer>
