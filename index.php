@@ -107,6 +107,7 @@
 					<li><img class="thumb" src="images/sliders/slider2.jpg" width="640px" height="418px"/></li>
 					<li><img class="thumb" src="images/sliders/slider3.jpg" width="640px" height="418px"/></li>
 					<li><img class="thumb" src="images/sliders/slider4.jpg" width="640px" height="418px"/></li>
+					<li><img class="thumb" src="images/sliders/slider5.jpg" width="640px" height="418px"/></li>
 				</ul>
 			</div>
 		</div>
