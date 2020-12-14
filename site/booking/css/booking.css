@@ -1,0 +1,365 @@
+/* CSS Document */
+
+#booking{
+	padding: 0;
+	overflow: hidden;
+	}
+	#booking header{
+		padding-top: 0;
+		}
+	#booking section{
+		padding-top: 0;
+		}
+	#booking h3{
+		position: relative;
+		padding: 1em 0;
+		color: #fff;
+		fill: #fff;
+		}
+		#booking h3:before{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: calc(50% - 50vw);
+			width: 100vw;
+			height: 100%;
+			background: #223a70;
+			z-index: -1;
+			}
+		#booking h3 i{
+			position: relative;
+			padding-left: 2em;
+			}
+		#booking h3 svg{
+			position: absolute;
+			top: calc(50% - 0.7em);
+			left: 0;
+			width: 1.4em;
+			height: 1.4em;
+			}
+	#booking h3+div{
+		margin-top: 2em;
+		}
+
+#lead{
+	margin-top: 2em;
+	}
+
+#hotelSearch{
+	margin-top: 2em;
+	}
+	#hotelSearch dl{
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 1em;
+		}
+	#hotelSearch dt,
+	#hotelSearch dd{}
+		#hotelSearch dt:nth-of-type(n+2),
+		#hotelSearch dd:nth-of-type(n+2){
+			margin-top: 0.8em;
+			}
+	#hotelSearch dt{
+		width: 7em;
+		padding-top: calc(0.6em + 1px);
+		color: #1a1a1a;
+		}
+		#hotelSearch dt.req:after{
+			content: "å¿…é ˆ";
+			position: relative;
+			margin-top: -0.1em;
+			padding: 0.2em 0.6em;
+			margin-left: 0.5em;
+			background: #ed7700;
+			border-radius: 0.2em;
+			color: #fff;
+			font-size: 0.8em;
+			}
+	#hotelSearch dd{
+		width: calc(100% - 7em);
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		}
+		#hotelSearch dd small{
+			margin-top: 0.5em;
+			font-size: 0.8em;
+			}
+	#hotelSearch ul{
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		margin-top: 1em;
+		}
+	#hotelSearch li{
+		width: 50%;
+		}
+		#hotelSearch li:nth-child(n+3){
+			margin-top: 1em;
+			}
+		#hotelSearch li:nth-child(even){
+			padding-left: 1em;
+			}
+	#hotelSearch .subTitle{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		}
+		#hotelSearch .subTitle:before{
+			background: #ed7700;
+			}
+		#hotelSearch .subTitle span{
+			margin-left: 0.5em;
+			font-weight: normal;
+			font-size: 0.8em;
+			}
+	#hotelSearch .searchTitle{
+		position: relative;
+		padding-left: 1.4em;
+		color: #1a1a1a;
+		font-weight: bold;
+		}
+		#hotelSearch .searchTitle:before{
+			content: "";
+			position: absolute;
+			top: 0.25em;
+			left: 0;
+			border: 0.5em solid transparent;
+			border-top-color: #1a1a1a;
+			}
+	#hotelSearch .linkBut{
+		width: 14em;
+		background: #ed7700;
+		font-weight: bold;
+		}
+	#hotelSearch .searchMap{}
+		#hotelSearch .searchMap .subTitle+div{
+			position: relative;
+			padding-top: 89.25%;
+			}
+		#hotelSearch .searchMap img,
+		#hotelSearch .searchMap svg{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			}
+		#hotelSearch .searchMap a{
+			fill: transparent;
+			}
+	#hotelSearch [name="pf"]{
+		border-color: #ed7700;
+		}
+	#hotelSearch [name="sd"]{
+		width: calc(100% - 2.5em);
+		margin-right: 1em;
+		}
+	#hotelSearch [name="calBtn"]{
+		width: 2em;
+		margin-left: auto;
+		padding: 0;
+		background: none;
+		fill: #1a1a1a;
+		}
+	#hotelSearch [name="sn"],
+	#hotelSearch [name="cp"],
+	#hotelSearch [name="rn"]{
+		width: calc(50% - 2.5em);
+		}
+	#hotelSearch [name="sn"],
+	#hotelSearch [name="cp"]{
+		margin-right: 0.5em;
+		}
+	#hotelSearch [name="rn"]{
+		margin-left: 0.5em;
+		margin-right: 0.5em;
+		}
+	#hotelSearch [name="pn"],
+	#hotelSearch [name="px"]{
+		width: calc(50% - 1.1em);
+		}
+	#hotelSearch [name="pn"]{
+		margin-right: 0.5em;
+		}
+	#hotelSearch [name="px"]{
+		margin-left: 0.5em;
+		}
+	#hotelSearch [name="rt"]{
+		min-width: 5em;
+		max-width: 10em;
+		}
+	#hotelSearch [name="mc"]{
+		min-width: 5em;
+		max-width: 10em;
+		}
+	#hotelSearch [name="kw"]{
+		width: 100%;
+		}
+
+.linkBox{
+	margin: 2em 0;
+	border: 1px solid #1a1a1a;
+	}
+	.linkBox:last-child{
+		margin-bottom: 0;
+		}
+	.linkBox dt{
+		padding: 0.8em 1em;
+		background: #f2ece8;
+		color: #1a1a1a;
+		fill: #1a1a1a;
+		text-align: center;
+		}
+		.linkBox dt i{
+			position: relative;
+			padding-left: 1.5em;
+			}
+		.linkBox dt svg{
+			position: absolute;
+			top: calc(50% - 0.5em);
+			left: 0;
+			}
+	.linkBox dd{
+		margin: 0;
+		padding: 1em;
+		}
+
+.subTitle{
+	color: #1a1a1a;
+	}
+
+.list,
+.col{}
+	.list li+li,
+	.col li+li{
+		margin-top: 1em;
+		}
+
+.flashWarning{
+	border-color: #ed7700;
+	animation: Flash1 0.5s infinite;
+	box-shadow: 0 0 0.5em 0 rgba(237,119,0,0.5);
+	}
+	@keyframes Flash1{
+		50%{ opacity: 0.2; }
+		}
+
+
+/* for all */
+@media (max-width: 1199px) {
+/*1199pxä»¥ä¸‹*/
+}
+@media (max-width: 991px) {
+/*991pxä»¥ä¸‹*/
+}
+
+
+/* for mobile */
+@media (max-width: 767px) {
+/*767ä»¥ä¸‹px*/
+}
+@media (max-width: 767px) and (orientation:portrait) {
+/*767pxä»¥ä¸‹ ç¸¦å‘ã*/
+}
+@media (max-width: 767px) and (orientation:landscape) {
+/*767pxä»¥ä¸‹ æ¨ªå‘ã*/
+.col{
+	column-gap: 2em;
+	column-count: 2;
+	}
+}
+
+
+/* for tablet */
+@media (min-width: 768px) {
+/*768pxä»¥ä¸Š*/
+#hotelSearch{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	}
+	#hotelSearch .searchConditions{
+		margin-top: 0;
+		}
+	#hotelSearch .searchNotes{
+		width: 100%;
+		}
+.linkBox{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+	.linkBox dt{
+		width: 100%;
+		}
+	.linkBox dd{
+		width: 50%;
+		padding: 1.5em;
+		}
+	.linkBox dt+dd:last-child{
+		width: 100%;
+		}
+.col{
+	column-gap: 2em;
+	}
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+/*768pxï½ž1199px*/
+#hotelSearch{}
+	#hotelSearch > *{
+		width: calc(50% - 1em);
+		}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+/*768pxï½ž991px*/
+.col{
+	column-count: 3;
+	}
+}
+
+
+/* for PC */
+@media (min-width: 992px) {
+/*992pxä»¥ä¸Š*/
+.col{
+	column-count: 3;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+/*992pxï½ž1199px*/
+}
+@media (min-width: 1200px) {
+/*1200pxä»¥ä¸Š*/
+#hotelSearch{}
+	#hotelSearch .searchMap{
+		width: calc(35% - 1em);
+		}
+	#hotelSearch .searchConditions{
+		width: calc(65% - 1em);
+		}
+	#hotelSearch .searchConditions{}
+		#hotelSearch .searchConditions .subTitle+div{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			}
+		#hotelSearch .searchConditions .subTitle+div > div{
+			width: calc(50% - 1em);
+			margin-top: 0;
+			}
+		#hotelSearch .searchConditions .subTitle+div > div:last-child{
+			width: 100%;
+			margin-top: 2em;
+			}
+}
+
+
+/* Edge */
+@supports (-ms-ime-align:auto) {
+}
+
+
+/* ie */
+@media all and (-ms-high-contrast: none) {
+}

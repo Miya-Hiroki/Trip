@@ -15,7 +15,7 @@
 	$(window).load(function() {
 		$('.flexslider').flexslider();
 		$('.flexslider').css('width', '90%');
-		$('.flexslider').css('height', '50%');
+		$('.flexslider').css('height', '90%');
 		$('.flexslider .slides li img').css('width', '100%');
 		$('.flexslider .slides li img').css('height', '100%');
 	});
@@ -91,7 +91,7 @@
 				<li><a href="site/areaguide/index.html">エリアガイド</a></li>
 				<li><a href="site/attractions/index.html">観光・体験</a></li>
 				<li><a href="site/dining/index.php">グルメ</a></li>
-				<li><a href="site/booking/index.html">旅の予約</a></li>
+				<li><a href="site/booking/index.php">旅の予約</a></li>
 				<li><a href="site/transport/index.html">アクセス</a></li>
 			</ul>
 		</div>
@@ -103,11 +103,11 @@
 		<div id="hero">
 			<div class="flexslider">
 				<ul class="slides">
-					<li><img class="thumb" src="images/sliders/slider1.jpg" width="640px" height="418px"/></li>
-					<li><img class="thumb" src="images/sliders/slider2.jpg" width="640px" height="418px"/></li>
-					<li><img class="thumb" src="images/sliders/slider3.jpg" width="640px" height="418px"/></li>
-					<li><img class="thumb" src="images/sliders/slider4.jpg" width="640px" height="418px"/></li>
-					<li><img class="thumb" src="images/sliders/slider5.jpg" width="640px" height="418px"/></li>
+					<li><img class="thumb" src="images/sliders/slider1.jpg"/></li>
+					<li><img class="thumb" src="images/sliders/slider2.jpg"/></li>
+					<li><img class="thumb" src="images/sliders/slider3.jpg"></li>
+					<li><img class="thumb" src="images/sliders/slider4.jpg"></li>
+					<li><img class="thumb" src="images/sliders/slider5.jpg"></li>
 				</ul>
 			</div>
 		</div>

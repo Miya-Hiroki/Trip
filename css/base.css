@@ -23,6 +23,19 @@ body {
 body:not(.nav) #nav {
     left: 100vw;
 }
+
+a{
+	color: #223a70;
+	fill: #223a70;
+	text-decoration: underline;
+	transition-property: color,background,background-color,background-size,border,border-color,box-shadow,fill,filter,opacity;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-out;
+	}
+	a:hover{
+		color: #e50012;
+		fill: #e50012;
+		}
 /* -------------------- header(After) --------------------*/ 
 .logo{
 	width:75%;
@@ -287,6 +300,20 @@ main * {
 	#main h2 {
 	    padding-top:0em;
 	}
+
+.buttonSet{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+	ul.buttonSet{
+		flex-wrap: wrap;
+		margin: -0.5em;
+		list-style: none;
+		}
+	.buttonSet li{
+		margin: 0.5em;
+		}
 
 .linkBut{
 	display: inline-block;

@@ -1,0 +1,79 @@
+/* CSS Document */
+
+#subject{}
+	#subject .tabMenu{}
+		#subject .tabMenu li{
+			background: #e56e80;
+			}
+		#subject .tabMenu .select:before{
+			background: #e56e80;
+			}
+
+
+/* for all */
+@media (max-width: 1199px) {
+/*1199pxä»¥ä¸‹*/
+}
+@media (max-width: 991px) {
+/*991pxä»¥ä¸‹*/
+}
+
+
+/* for mobile */
+@media (max-width: 767px) {
+/*767ä»¥ä¸‹px*/
+}
+@media (max-width: 767px) and (orientation:portrait) {
+/*767pxä»¥ä¸‹ ç¸¦å‘ã*/
+#subject{}
+	#subject li{
+		width: calc(50% - 0.25em);
+		}
+}
+@media (max-width: 767px) and (orientation:landscape) {
+/*767pxä»¥ä¸‹ æ¨ªå‘ã*/
+#subject{}
+	#subject li{
+		width: calc(50% - 0.5em);
+		}
+}
+
+
+/* for tablet */
+@media (min-width: 768px) {
+/*768pxä»¥ä¸Š*/
+#subject{}
+	#subject li{
+		width: calc(50% - 0.5em);
+		}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+/*768pxï½ž991px*/
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+/*768pxï½ž1199px*/
+}
+
+
+/* for PC */
+@media (min-width: 992px) {
+/*992pxä»¥ä¸Š*/
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+/*992pxï½ž1199px*/
+}
+@media (min-width: 1200px) {
+/*1200pxä»¥ä¸Š*/
+}
+
+
+/* Edge */
+@supports (-ms-ime-align:auto) {
+}
+
+
+/* ie */
+@media all and (-ms-high-contrast: none) {
+}
+
+

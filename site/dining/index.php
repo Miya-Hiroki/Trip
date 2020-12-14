@@ -21,8 +21,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>グルメ!自由旅〜中国地方編〜</title>
 <!-- InstanceEndEditable -->
-<meta name="description" content="">
-<meta name="author" content="">
+<meta name="description" content="中国地方のグルメ情報を紹介">
+<meta name="author" content="Miya Hiroki">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:site_name" content="自由旅〜中国地方編〜">
 <!-- CSS -->
@@ -50,11 +50,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<div id="globalMenu">
 		<div class="wrap">
 			<ul>
-				<li><a href="/areaguide/index.html">エリアガイド<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
-				<li><a href="/attractions/index.html">観光・体験<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
+				<li><a href="../areaguide/index.php">エリアガイド<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
+				<li><a href="../attractions/index.php">観光・体験<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
 				<li><a href="index.php">グルメ<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
-				<li><a href="/booking/index.html">旅の予約<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
-				<li><a href="/transport/index.html">アクセス<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
+				<li><a href="../booking/index.php">旅の予約<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
+				<li><a href="../transport/index.php">アクセス<i><svg><use xlink:href="#iconChevronRight"></use></svg></i></a></li>
 			</ul>
 		</div>
 	</div>
@@ -212,3 +212,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</div>
 </footer>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/common/js/base.js"></script>
+<script src="/common/js/baseJp.js"></script>
+<!-- InstanceBeginEditable name="foot" -->
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>

@@ -64,6 +64,8 @@ if(!isset($_SESSION['name'])){
       $newfile=getPathFile($season).".".$ext;//
       $filecontents=rename($_FILES['image']['tmp_name'], $newfile);
       chmod($newfile, 0644); //所有者に読み込み、書き込みの権限を与え、その他には読み込みだけ許可する。
+      $newfile1="../images/ranking/".basename($newfile);
+      copy($newfile, $newfile1); //画像コピーして同じフォルダに格納
       
       //Databaseに格納
       include("db_config.php");
@@ -108,7 +110,7 @@ if(!isset($_SESSION['name'])){
         }
         $ranking+=1; //ランキング番号の仮設定
         $sql="INSERT INTO trip_ranking values(NULL,'$name_sei','$name_mei','$name_sei_kana','$name_mei_kana','$season','$year','$month','$day',
-        '$category','$subject','$zip','$pref','$city','$house_number','$building','$tel','$email','$memo','$newfile','$ranking');";
+        '$category','$subject','$zip','$pref','$city','$house_number','$building','$tel','$email','$memo','$newfile1','$ranking');";
         
         //echo "<script>alert(\"". $sql. "\");</script>";
         if(mysqli_query($link,$sql)){

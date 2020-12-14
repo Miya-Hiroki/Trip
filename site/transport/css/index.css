@@ -1,0 +1,350 @@
+/* CSS Document */
+
+#transport{
+	padding: 0;
+	overflow: hidden;
+	}
+	#transport header{
+		padding-top: 0;
+		}
+
+#lead{
+	margin-top: 2em;
+	}
+
+#map{
+	margin-top: 2em;
+	}
+	#map figure{
+		margin-bottom: 2em;
+		text-align: center;
+		}
+	#map .linkBut{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 15em;
+		margin: auto;
+		padding: calc(1em - 2px);
+		background: #1a1a1a;
+		}
+
+#accessStart{
+	background: #f2ece8;
+	}
+	#accessStart .subTitle+div{
+		margin-top: 1em;
+		}
+	#accessStart .buttonSet{
+		justify-content: flex-start;
+		}
+	#accessStart .linkBut{
+		display: block;
+		}
+		#accessStart .linkBut:not(.select){
+			background: #fff;
+			border-color: #223a70;
+			color: #223a70;
+			}
+		#accessStart .select{
+			background: #223a70;
+			color: #fff;
+			}
+
+#accessMethod{}
+	#accessMethod section{
+		padding-top: 0;
+		}
+	#accessMethod h3{
+		position: relative;
+		padding: 1em 0;
+		color: #fff;
+		fill: #fff;
+		}
+		#accessMethod h3:before{
+			content: "";
+			position: absolute;
+			top: 0;
+			left: calc(50% - 50vw);
+			width: 100vw;
+			height: 100%;
+			background: #223a70;
+			z-index: -1;
+			}
+		#accessMethod h3 i{
+			position: relative;
+			padding-left: 2em;
+			}
+		#accessMethod h3 svg{
+			position: absolute;
+			top: calc(50% - 0.7em);
+			left: 0;
+			width: 1.4em;
+			height: 1.4em;
+			}
+	#accessMethod h3+div{
+		margin-top: 2em;
+		}
+
+.root{}
+	.root ul{
+		display: flex;
+		list-style: none;
+		}
+	.root ul+ul{
+		margin-top: 2em;
+		}
+	.root li{
+		text-align: center;
+		}
+		.root li:nth-child(odd){
+			padding: 1em;
+			border: 2px solid #666;
+			color: #666;
+			font-weight: bold;
+			line-height: 1em;
+			}
+		.root li:nth-child(even){
+			position: relative;
+			color: #1a1a1a;
+			line-height: 1.4em;
+			}
+			.root li:nth-child(even):before,
+			.root li:nth-child(even):after{
+				content: "";
+				position: absolute;
+				}
+			.root li:nth-child(even):before{
+				background: #223a70;
+				}
+			.root li:nth-child(even):after{
+				border: 0.5em solid transparent;
+				}
+		.root li:first-child{
+			background: #e3eeff;
+			border-color: #223a70;
+			color: #223a70;
+			}
+		.root li:last-child{
+			background: #fff4e8;
+			border-color: #ed7700;
+			color: #ed7700;
+			}
+	.root span{
+		font-weight: bold;
+		}
+
+.subTitle{
+	color: #1a1a1a;
+	}
+
+
+/* for all */
+@media (max-width: 1199px) {
+/*1199px以下*/
+}
+@media (max-width: 991px) {
+/*991px以下*/
+}
+
+
+/* for mobile */
+@media (max-width: 767px) {
+/*767以下px*/
+#lead{}
+	#lead p+div{
+		margin-top: 1em;
+		}
+#accessStart{
+	padding: 2em 0;
+	}
+	#accessStart .buttonSet{
+		padding: 0;
+		flex-direction: row;
+		}
+}
+@media (max-width: 767px) and (orientation:portrait) {
+/*767px以下 縦向き*/
+#accessStart{}
+	#accessStart .buttonSet{}
+		#accessStart .buttonSet li{
+			width: calc(50% - 1em);
+			}
+.root{}
+	.root ul{
+		flex-direction: column;
+		}
+	.root li{}
+		.root li:nth-child(even){
+			padding: 1em 0;
+			padding-left: 3em;
+			}
+			.root li:nth-child(even):before{
+				top: 0;
+				left: 2.5em;
+				width: 2px;
+				height: calc(100% - 0.4em);
+				}
+			.root li:nth-child(even):after{
+				bottom: -0.5em;
+				left: calc(2em + 1px);
+				border-top-color: #223a70;
+				transform: scale(1,1.5);
+				}
+	.root span{
+		display: block;
+		}
+}
+@media (max-width: 767px) and (orientation:landscape) {
+/*767px以下 横向き*/
+#accessStart{}
+	#accessStart .buttonSet{}
+		#accessStart .buttonSet li{
+			width: calc(33.33% - 1em);
+			}
+.root{}
+	.root ul{
+		flex-wrap: wrap;
+		align-items: center;
+		}
+	.root li{}
+		.root li:nth-child(odd){
+			width: 12em;
+			}
+		.root li:nth-child(even){
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: center;
+			width: calc(100% - 24em);
+			min-height: 3.5em;
+			}
+			.root li:nth-child(even):before{
+				top: calc(50% - 1px);
+				left: 0;
+				width: calc(100% - 0.4em);
+				height: 2px;
+				}
+			.root li:nth-child(even):after{
+				top: calc(50% - 0.5em);
+				right: -0.5em;
+				border-left-color: #223a70;
+				transform: scale(1,0.7);
+				}
+		.root li:nth-child(n+4){
+			margin-top: 1em;
+			}
+	.root span{
+		width: 100%;
+		margin-bottom: 0.6em;
+		}
+}
+
+
+/* for tablet */
+@media (min-width: 768px) {
+/*768px以上*/
+#lead{}
+	#lead div+div{
+		margin: 0 0 0 1em;
+		}
+	#lead .wrap{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		}
+#accessStart{}
+	#accessStart .buttonSet{}
+		#accessStart .buttonSet li{
+			width: 10em;
+			}
+.root{}
+	.root ul{
+		flex-wrap: wrap;
+		align-items: center;
+		}
+	.root li{}
+		.root li:nth-child(even){
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: center;
+			min-height: 3.5em;
+			}
+			.root li:nth-child(even):before{
+				top: calc(50% - 1px);
+				left: 0;
+				width: calc(100% - 0.4em);
+				height: 2px;
+				}
+			.root li:nth-child(even):after{
+				top: calc(50% - 0.5em);
+				right: -0.5em;
+				border-left-color: #223a70;
+				transform: scale(1,0.7);
+				}
+	.root span{
+		width: 100%;
+		margin-bottom: 0.6em;
+		}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+/*768px～991px*/
+#accessStart{
+	padding: 3em 0;
+	}
+.root{}
+	.root li{}
+		.root li:nth-child(odd){
+			width: 12em;
+			}
+		.root li:nth-child(even){
+			width: calc(100% - 24em);
+			}
+		.root li:nth-child(n+4){
+			margin-top: 1em;
+			}
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+/*768px～1199px*/
+}
+
+
+/* for PC */
+@media (min-width: 992px) {
+/*992px以上*/
+#accessStart{
+	padding: 4em 0;
+	}
+.root{}
+	.root li{}
+		.root li:nth-child(odd){
+			width: 12em;
+			}
+		.root li:nth-child(even){
+			width: calc(50% - 18em);
+			}
+		.root li:nth-child(2):nth-last-child(2){
+			width: calc(100% - 24em);
+			}
+		.root li:nth-child(n+6){
+			margin-top: 1.5em;
+			}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+/*992px～1199px*/
+}
+@media (min-width: 1200px) {
+/*1200px以上*/
+}
+
+
+/* Edge */
+@supports (-ms-ime-align:auto) {
+}
+
+
+/* ie */
+@media all and (-ms-high-contrast: none) {
+}
+
